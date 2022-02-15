@@ -80,7 +80,7 @@ class RefreshLocalizations {
     'sv': SvRefreshString(),
     'pt': PtRefreshString(),
     'ko': KrRefreshString(),
-    'vi': KrRefreshString(),
+    'vi': ViRefreshString(),
   };
 
   RefreshString? get currentLocalization {
@@ -117,7 +117,8 @@ class RefreshLocalizationsDelegate
       'pt',
       'sv',
       'nl',
-      'es'
+      'es',
+      'vi'
     ].contains(locale.languageCode);
   }
 
@@ -640,13 +641,13 @@ class KrRefreshString implements RefreshString {
 /// Vietnam
 class ViRefreshString implements RefreshString {
   @override
-  String? canLoadingText = "Release to load more";
+  String? canLoadingText = "Thả để tải thêm";
 
   @override
-  String? canRefreshText = "Release to refresh";
+  String? canRefreshText = "Thả để làm mới";
 
   @override
-  String? canTwoLevelText = "Release to enter secondfloor";
+  String? canTwoLevelText = "Thả để lên cấp độ thứ hai";
 
   @override
   String? idleLoadingText = "Kéo lên tải thêm";
