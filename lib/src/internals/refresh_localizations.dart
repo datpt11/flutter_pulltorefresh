@@ -80,6 +80,7 @@ class RefreshLocalizations {
     'sv': SvRefreshString(),
     'pt': PtRefreshString(),
     'ko': KrRefreshString(),
+    'vi': KrRefreshString(),
   };
 
   RefreshString? get currentLocalization {
@@ -634,4 +635,40 @@ class KrRefreshString implements RefreshString {
 
   @override
   String? refreshingText = "새로 고침 중…";
+}
+
+/// Vietnam
+class ViRefreshString implements RefreshString {
+  @override
+  String? canLoadingText = "Release to load more";
+
+  @override
+  String? canRefreshText = "Release to refresh";
+
+  @override
+  String? canTwoLevelText = "Release to enter secondfloor";
+
+  @override
+  String? idleLoadingText = "Kéo lên tải thêm";
+
+  @override
+  String? idleRefreshText = "Kéo xuống làm mới";
+
+  @override
+  String? loadFailedText = "Tải không thành công";
+
+  @override
+  String? loadingText = "Đang tải…";
+
+  @override
+  String? noMoreText = "Không có thêm dữ liệu";
+
+  @override
+  String? refreshCompleteText = "Làm mới hoàn thành";
+
+  @override
+  String? refreshFailedText = "Làm mới không thành công";
+
+  @override
+  String? refreshingText = "Đang làm mới…";
 }
