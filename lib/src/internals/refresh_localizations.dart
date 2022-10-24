@@ -81,6 +81,7 @@ class RefreshLocalizations {
     'pt': PtRefreshString(),
     'ko': KrRefreshString(),
     'vi': ViRefreshString(),
+    'th': ViRefreshString(),
   };
 
   RefreshString? get currentLocalization {
@@ -118,7 +119,10 @@ class RefreshLocalizationsDelegate
       'sv',
       'nl',
       'es',
-      'vi'
+      'vi',
+      'lo',
+      'id',
+      'th',
     ].contains(locale.languageCode);
   }
 
@@ -672,4 +676,112 @@ class ViRefreshString implements RefreshString {
 
   @override
   String? refreshingText = "Đang làm mới…";
+}
+
+/// Thailand
+class ThRefreshString implements RefreshString {
+  @override
+  String? canLoadingText = "ปล่อยเพื่อดาวน์โหลดเพิ่มเติม";
+
+  @override
+  String? canRefreshText = "ปล่อยเพื่อรีเฟรช";
+
+  @override
+  String? canTwoLevelText = "ปล่อยสู่ระดับที่สอง";
+
+  @override
+  String? idleLoadingText = "ดึงโหลดเพิ่มเติม";
+
+  @override
+  String? idleRefreshText = "เลื่อนลง";
+
+  @override
+  String? loadFailedText = "การดาวน์โหลดไม่สำเร็จ";
+
+  @override
+  String? loadingText = "กำลังโหลด ...";
+
+  @override
+  String? noMoreText = "ไม่มีข้อมูลเพิ่มเติม";
+
+  @override
+  String? refreshCompleteText = "รีเฟรช";
+
+  @override
+  String? refreshFailedText = "ไม่สำเร็จ";
+
+  @override
+  String? refreshingText = "สดชื่น…";
+}
+
+/// Indo
+class IdRefreshString implements RefreshString {
+  @override
+  String? canLoadingText = "Rilis untuk mengunduh lebih banyak";
+
+  @override
+  String? canRefreshText = "Lepaskan untuk menyegarkan";
+
+  @override
+  String? canTwoLevelText = "Rilis ke level kedua";
+
+  @override
+  String? idleLoadingText = "Tarik beban tambahan";
+
+  @override
+  String? idleRefreshText = "Gulir ke bawah";
+
+  @override
+  String? loadFailedText = "Unduhan tidak berhasil";
+
+  @override
+  String? loadingText = "Memuat ...";
+
+  @override
+  String? noMoreText = "Tidak ada lagi data";
+
+  @override
+  String? refreshCompleteText = "Menyegarkan";
+
+  @override
+  String? refreshFailedText = "Gagal";
+
+  @override
+  String? refreshingText = "Menyegarkan ...";
+}
+
+/// Laos
+class LoRefreshString implements RefreshString {
+  @override
+  String? canLoadingText = "ປ່ອຍຕົວເພື່ອດາວໂຫລດເພີ່ມເຕີມ";
+
+  @override
+  String? canRefreshText = "ປ່ອຍໃຫ້ Refresh";
+
+  @override
+  String? canTwoLevelText = "ປ່ອຍໄປໃນລະດັບທີສອງ";
+
+  @override
+  String? idleLoadingText = "ດຶງເຖິງການໂຫຼດເພີ່ມເຕີມ";
+
+  @override
+  String? idleRefreshText = "ເລື່ອນ​ລົງ";
+
+  @override
+  String? loadFailedText = "ການດາວໂຫລດບໍ່ສໍາເລັດ";
+
+  @override
+  String? loadingText = "ກໍາລັງໂຫລດ ...";
+
+  @override
+  String? noMoreText = "ບໍ່ມີຂໍ້ມູນອີກຕໍ່ໄປ";
+
+  @override
+  String? refreshCompleteText = "ຈຸດຫມາດ";
+
+  @override
+  String? refreshFailedText = "ບໍ່ສໍາເລັດ";
+
+  @override
+  String? refreshingText = "ສົດຊື່ນ ...";
 }
