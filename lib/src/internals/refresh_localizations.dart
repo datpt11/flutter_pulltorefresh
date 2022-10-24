@@ -81,7 +81,9 @@ class RefreshLocalizations {
     'pt': PtRefreshString(),
     'ko': KrRefreshString(),
     'vi': ViRefreshString(),
-    'th': ViRefreshString(),
+    'th': ThRefreshString(),
+    'id': IdRefreshString(),
+    'lo': LoRefreshString(),
   };
 
   RefreshString? get currentLocalization {
